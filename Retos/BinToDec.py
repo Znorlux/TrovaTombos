@@ -8,3 +8,4 @@ binario = "111111"
 dec = bintodec(binario)
 print(dec)
 
+#Hecho por Christian Lombardi
