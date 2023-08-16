@@ -1,0 +1,23 @@
+def aproximacion_raiz(numero, aproximacion_inicial, precision=0.000001):  # o(n)
+    aproximado = aproximacion_inicial  # o(1)
+
+    while True:  # o(n)
+        division = numero / aproximado  # o(n)
+        nuevo_aproximado = (aproximado + division) / 2  # o(n)
+
+        if abs(nuevo_aproximado - aproximado) < precision:  # o(n)
+            break  # o(n)
+
+        aproximado = nuevo_aproximado  # o(n)
+
+    return aproximado  # o(1)
+
+
+numero_original = float(input("Ingrese el número al cual se le calculará la raíz: "))  # o(1)
+aproximacion_inicial = float(input("Ingrese la primera aproximación a la raíz: "))  # o(1)
+
+resultado = aproximacion_raiz(numero_original, aproximacion_inicial)  # o(1)
+
+print(f"La aproximación de la raíz de {numero_original} es: {resultado}")  # o(1)
+
+#Formula algoritmo = 7o(n) + 6o(1)
