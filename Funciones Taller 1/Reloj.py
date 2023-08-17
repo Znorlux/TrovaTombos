@@ -1,10 +1,10 @@
-def angulos(horas:int, min:int):
-    Angulo_horas = horas*30+min*0.5
-    Angulo_min = min*6
-    Angulo_mas_pequeño = Angulo_horas - Angulo_min
-    if Angulo_mas_pequeño > 180:
-        return 360-Angulo_mas_pequeño
-    return Angulo_mas_pequeño
-H = int(input("Ingrese las horas: "))
-M = int(input("Ingrese los minutos: "))
-print(f"El angulo más pequeño es {angulos(H,M)}°")
+def angulos(horas:int, min:int): # O (1)
+    Manecilla_horas = horas*30+min*0.5 # O (1)
+    Manecilla_min = min*6 # O (1)
+    Angulo_mas_pequeño = Manecilla_horas - Manecilla_min # O (1)
+    if Angulo_mas_pequeño > 180: # O (1)
+        return 360-Angulo_mas_pequeño # O (1)
+    return Angulo_mas_pequeño # O (1)
+H = int(input("Ingrese la hora: ")) # O (1)
+M = int(input("Ingrese los minutos: ")) # O (1)
+print(f"El angulo más pequeño es {angulos(H,M)}°") # O (1)
