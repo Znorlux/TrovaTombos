@@ -1,0 +1,8 @@
+1. Prueba de carga
+2. prueba de humo
+3. prueba de estres
+
+
+
+Conclusiones:
+Podemos ver como hay un desface entre el nivel de error y el nivel de request, por lo que se puede concluir que el server llego al limite al tomar los datos ingresados, por lo que, crasheo
